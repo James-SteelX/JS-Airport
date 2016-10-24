@@ -1,6 +1,6 @@
 'use strict';
 
-describe('',function(){
+describe('Weather',function(){
   var weather;
   beforeEach(function(){
     weather = new Weather();
