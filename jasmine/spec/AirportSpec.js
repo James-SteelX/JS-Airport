@@ -3,6 +3,7 @@
 describe('Airport', function(){
   var airport;
   var plane;
+  var weather;
   beforeEach(function(){
     weather = jasmine.createSpyObj('weather', ['isStormy']);
     airport = new Airport(weather);
@@ -43,6 +44,6 @@ describe('Airport', function(){
    });
    it('does not clear planes for landing', function(){
      expect(function(){ airport.clearForLanding(plane); }).toThrowError('cannot land during storm');
-   )};
+   });
  });
 });
